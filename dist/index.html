@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="popupForm" style="display: none";>
+           <div id="form-container"> 
+            <div id="form-header">
+                <h4>Create a new...</h4>
+            </div>
+            <div id="form-sidebar">
+                <h4>To-Do</h4>
+                <h4>Project</h4>
+                <h4>Note</h4>
+            </div>
+            <form id="form">
+                <input type="text" id="title" placeholder="title">
+                <textarea id="description" placeholder="description" style="resize: vertical;"></textarea>
+                <input type="date" id="date">
+                <div class="radioButton">
+                    <legend>Task Priority: </legend>
+                <div>
+                  <input type="radio" id="low" name="priority" value="Low"
+                         checked>
+                  <label for="huey">Low</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="medium" name="priority" value="Medium">
+                  <label for="dewey">Medium</label>
+                </div>
+            
+                <div>
+                  <input type="radio" id="high" name="priority" value="High">
+                  <label for="louie">High</label>
+                </div>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+                <button id="close">Close</button>
+            </form>
+           </div>
+        </div>
+        <div id="content">
+            <div id="header">
+                <h1>Task List</h1>
+                
+            </div>
+            <div id="sidebar">
+                <h4>Home</h4>
+                <h4>Projects</h4>
+                <h4>Notes</h4>
+            </div>
+            <div id="main">
+                
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
